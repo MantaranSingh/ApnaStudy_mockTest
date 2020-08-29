@@ -33,6 +33,8 @@ Array.from(listItems).forEach((elements) => {
 
         document.querySelector('.questions h1')
             .innerText=`Question ${event.target.innerText}`
+        document.querySelector('.mockBar h2')
+            .innerText=`${event.target.innerText}/20 Questions`
     })
 })
 
