@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    font-size: 10px;
+}
+
+.mockHeader {
+    width: 100%;
+    text-align: center;
+}
+
+.mockHeader h2 {
+    color: #ffffff;
+    padding: 1em 0;
+    font-size: 2.5em;
+    background-color: #292059;
+}
+
+.mockStatus {
+    display: flex;
+    background-color: #eff3ff;
+}
+
+.mockBar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1em;
+}
+
+.mockBar h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.mockTimer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockTimer span {
+    font-size: 3em;
+    font-weight: 600;
+    color: #281e5e;
+}
+
+.bar {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+}
+
+.barProgress {
+    width: calc(6.66%*1);
+    height: 3em;
+    background-color: rgb(116, 237, 49);
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+
+
+@media(max-width:800px) {
+    .bar {
+        height: 15px;
+    }
+    .barProgress {
+        height: 1.5em;
+    }
+}
+
+.mockList {
+    margin: 1rem;
+}
+
+.mockList ul {
+    overflow: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mockList li {
+    display: inline-block;
+    border-radius: 100%;
+    list-style: none;
+    background-color: #eff3ff;
+    transition: all 0.5s;
+    margin: 0 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #281e5e;
+    font-weight: 600;
+    padding: 8px;
+    width: 1em;
+}
+.mockList li:hover{
+    background-color: #CFD8DC;
+    cursor: pointer;
+}
+
+@media(max-width:1200px) {
+    .mockList li {
+        margin: 0 0.5rem;
+        font-size: 2em;
+    }
+}
+
+.questions {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.questions h1 {
+    color: #292059;
+    font-size: 2.5rem;
+    margin: 5px 0;
+}
+
+.questions p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #292059;
+    line-height: 35px;
+}
+
+@media (max-width:800px) {
+    .questions h1 {
+        font-size: 1.5rem;
+    }
+    .questions p {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}
+
+.options {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.answer {
+    display: flex;
+    margin: 1rem 0;
+    border: 2px solid #f1f4f8;
+    border-radius: 0.5rem;
+    padding: 10px 0;
+}
+
+.answer h2 {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.answer h1 {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.answer:hover {
+    cursor: pointer;
+}
+
+.container .questionNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  
+  .container .questionNav .navButton {
+    margin-bottom: 2rem;
+  }
+  
+  .container .questionNav .navButton button {
+    border: none;
+    background-color: #423a74;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+  }
+  .active{
+    background-color: #281e5e!important;
+    color: white!important;
+  }
+  .selected{
+    background-color: #72ef31 !important;
+    border: 2px solid #51962c !important;
+  }
